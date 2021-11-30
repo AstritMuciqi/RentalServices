@@ -1,0 +1,117 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{    
+    display: flex;
+    width: 100%    
+}
+.logo{
+    width: 50%;
+    background:  #2a2f2d;
+    padding: 25px 95px;
+}
+    
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #ffffff;
+}
+    
+.logo a span{
+    color: #e4461f;
+}
+    
+.content-nav{
+    
+     display: flex;
+     width: 50%;
+     padding: 20px 60px;
+     background:  #2a2f2d;
+    
+}
+.nav{
+    
+    width:60%;
+    display: flex;
+    
+}
+.nav ul{
+    display:flex;
+        
+    
+}
+.nav ul li{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+    
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    line-height: 50px;
+    position: relative;
+    right: 30px;
+}
+    
+.nav ul li a:hover{
+    color: #e4461f;
+}
+
+/*TopSection - Home */
+
+#slideshow {
+    position: relative;
+}
+#slideshow div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1em 3em;
+    background-repeat: no-repeat;
+}
+
+.TopSection1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 1184px;
+    height: 390px;
+    background-image: url("../assets/cars.jpg");
+    background-size: 100% 100%;
+}
+.TopSection0{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 1184px;
+    height: 390px;
+    background-image: url("../assets/Cars-and-DrivingImage.jpg");
+    background-size: 100% 100%;
+}
+.TopSection2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 1184px;
+    height: 390px;
+    background-image: url("../assets/feedback.jpg");
+    background-size: 100% 100%;
+}
+ .h4-section{
+    color: #e4461f;
+    width: auto;
+    text-align: center;
+}
+.h1-section{
+    color: #ffffff;
+    width: auto;
+    text-align: center;
+    letter-spacing: .2rem;
+}
+    
+    
