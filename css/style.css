@@ -18,6 +18,9 @@
     font-size: 30px;
     color: #ffffff;
 }
+a:hover{
+    border-bottom: 1px solid red;
+}
     
 .logo a span{
     color: #e4461f;
@@ -71,7 +74,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 1em 3em;
     background-repeat: no-repeat;
 }
 
@@ -79,7 +81,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 1184px;
+    width: 100%; 
     height: 390px;
     background-image: url("../assets/cars.jpg");
     background-size: 100% 100%;
@@ -88,7 +90,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 1184px;
+    width: 100%; 
     height: 390px;
     background-image: url("../assets/Cars-and-DrivingImage.jpg");
     background-size: 100% 100%;
@@ -97,7 +99,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 1184px;
+    width: 100%; 
     height: 390px;
     background-image: url("../assets/feedback.jpg");
     background-size: 100% 100%;
@@ -112,6 +114,129 @@
     width: auto;
     text-align: center;
     letter-spacing: .2rem;
+}
+.offers{
+    margin-top: 402px;
+    width: 97%;
+    margin-left: 20px;
+    height: 560px;
+    border-radius: 30px;    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(233, 233, 233);
+    justify-content: space-around;
+    background-image: url("../assets/background8.jpg");
+    background-size: 100% 100%;
+   
+}
+
+.offers1{
+    border-radius: 30px;    
+    width: 300px;
+    height: 500px;
+    margin-top: 60px;
+    background-image: url("../assets/handImage.jpg");
+    background-size: contain;
+    background-repeat: no-repeat ;
+    background-size: 100% 55%;
+    background-color: rgb(52, 194, 194);
+
+}
+.offers1 h2{
+    text-align: center;
+    margin-top: 280px;
+}
+.offers1 p{
+    text-align: center;
+    font-size: 15px;
+    color: rgb(90, 90, 90);
+    margin-left: 40px;
+    margin-right: 40px;
+    margin: 20px 40px 0 40px;
+}
+.offers1 button{
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+    width: 200px;
+    height: 40px;
+    border: 2px solid #e4461f;
+    border-radius: 15px;
+    background-color: #e4461f;   
+    color: white; 
+
+}
+.offers2{
+    border-radius: 30px;    
+    margin-top: 30px;
+    width: 300px;
+    height: 500px;
+    background-image:url("../assets/golf7.jpg");
+    background-size: contain;
+    background-repeat: no-repeat ;
+    background-size: 100% 55%;
+    background-color: rgb(52, 194, 194);
+
+}
+.offers2 h2{
+    text-align: center;
+}
+.offers2 p{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(90, 90, 90);
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.offers2 button{
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+    width: 200px;
+    height: 40px;
+    border: 2px solid #e4461f;
+    border-radius: 15px;
+    background-color: #e4461f;   
+    color: white; 
+
+}
+.offers3{
+    border-radius: 30px;    
+    background-image:url("../assets/jeep.jpeg");
+    width: 300px;
+    height: 500px;
+    margin-top: 60px;
+    background-size: contain;
+    background-repeat: no-repeat ;
+    background-size: 100% 55%;
+    background-color: rgb(52, 194, 194);
+    
+}
+.offers3 h2{
+    text-align: center;
+}
+.offers3 p{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(90, 90, 90);
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.offers3 button{
+    text-align: center;
+    margin: 45px auto;
+    display: block;
+    width: 200px;
+    height: 40px;
+    border: 2px solid #e4461f;
+    border-radius: 15px;
+    background-color: #e4461f;   
+    color: white; 
+
 }
     
     
