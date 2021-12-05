@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 .header{    
     display: flex;
     width: 100%    
@@ -119,7 +120,7 @@ a:hover{
     margin-top: 402px;
     width: 97%;
     margin-left: 20px;
-    height: 560px;
+    height: 580px;
     border-radius: 30px;    
     display: flex;
     flex-direction: row;
@@ -128,7 +129,6 @@ a:hover{
     justify-content: space-around;
     background-image: url("../assets/background8.jpg");
     background-size: 100% 100%;
-   
 }
 
 .offers1{
@@ -248,21 +248,23 @@ a:hover{
     justify-content: center;
     flex-direction: column;
     background-image: url("../assets/contactForm3.jpg");
-    border-radius: 30px;}
+    background-size: 100% 100%;
+    border-radius: 30px;
+}
 .inputi{
     width: 350px;
-    height: 25px;
+    height: 45px;
     margin: 0 auto ;
     padding: 1em;
 }
 .message{
     width: 350px;
-    height: 75px;
+    height: 135px;
     margin: 0 auto ;  
     padding: 1em;
 }
  
-.formBox h2{
+.formBox h1{
     align-self: center;
     margin-bottom: 50px;
     
@@ -278,7 +280,8 @@ a:hover{
     border-radius: 30px;  
     border: 2px solid #f3f1f1; 
 }
-.container{
+.bodyContact{
+    height: 100%;
     background-image: url("../assets/contactForm.jpg");
     background-size: 100% 100%;
 }
@@ -286,7 +289,6 @@ a:hover{
 /* Footer */
 
 footer{
-    position: fixed;
     bottom: 0;
     display: flex;
 }
