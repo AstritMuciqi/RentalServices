@@ -7,9 +7,9 @@
 </head>
 
 <body class="bodyContact">
-    <header class="header">
+    <header>
         <div class="logo">
-            <a href=""><b>CAR <span>RENTAL</span></b></a>
+            <a href="./index.html"><b>CAR <span>RENTAL</span></b></a>
         </div>
         <div class="content-nav">
             <nav class="nav">
@@ -26,10 +26,14 @@
     </header>
     <div class="formBox">
         <h1>Contact Us</h1>
-        <input class="inputi" type="text" value="Username"> <br>
-        <input class="inputi" type="email" value="E - Mail"> <br> <br>
-        <input class="message" type="text" value="Type message here..."> <br>
-        <input style="color: white;" class="submit" type="submit" value="Send">
+        <form action="./index.html" onsubmit="return validationContact()">
+            <label>Email or Username</label> <br> <input class="inputi" type="text" id="user"> <br> <span
+                style="color: red;" id="userError"></span> <br>
+            <label>Message</label> <br>
+            <textarea id="message" rows="5" cols="60" name="description">
+            </textarea><br> <span style="color: red;" id="messageError"></span> <br>
+            <input style="background-color: blue; color: white;"  type="submit" id="submitButton" class="inputi" value="Send"  style="color: white;">
+        </form>
     </div>
     </div>
     <footer class="footer-distributed">
@@ -76,6 +80,7 @@
     </footer>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/validimi.js"></script>
 </body>
 
 </html>
