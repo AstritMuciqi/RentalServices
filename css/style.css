@@ -2,12 +2,14 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header{ 
     display: flex;
 }
 header h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: absolute; 
     margin: 200px 0 0 390px;
     text-align: center;
@@ -39,6 +41,7 @@ video{
     
 .logo a span{
     color: #e4461f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
     
 .content-nav{
@@ -65,6 +68,7 @@ video{
     
 }
 .nav ul li a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
     color: white;
     line-height: 50px;
@@ -117,18 +121,24 @@ video{
     background-image: url("../assets/Cars-and-DrivingImage.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .slide:nth-of-type(2) {
     background-image: url("../assets/background4.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .slide:nth-of-type(3) {
     background-image: url("../assets/feedback4.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 /* #slideshow {
@@ -227,7 +237,7 @@ video{
     margin-top: 2px;
     width: 97%;
     margin-left: 20px;
-    height: 580px;
+    height: 600px;
     border-radius: 30px;    
     display: flex;
     flex-direction: row;
@@ -236,12 +246,13 @@ video{
     justify-content: space-around;
     background-image: url("../assets/background8.jpg");
     background-size: 100% 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .offers1{
     border-radius: 30px;    
     width: 300px;
-    height: 500px;
+    height: 520px;
     margin-top: 60px;
     background-image: url("../assets/handImage.jpg");
     background-size: contain;
@@ -253,6 +264,7 @@ video{
 .offers1 h2{
     text-align: center;
     margin-top: 280px;
+    
 }
 .offers1 p{
     text-align: center;
@@ -278,7 +290,7 @@ video{
     border-radius: 30px;    
     margin-top: 30px;
     width: 300px;
-    height: 500px;
+    height: 520px;
     background-image:url("../assets/golf7.jpg");
     background-size: contain;
     background-repeat: no-repeat ;
@@ -314,7 +326,7 @@ video{
     border-radius: 30px;    
     background-image:url("../assets/jeep.jpeg");
     width: 300px;
-    height: 500px;
+    height: 520px;
     margin-top: 60px;
     background-size: contain;
     background-repeat: no-repeat ;
@@ -358,6 +370,11 @@ video{
     background-size: 100% 100%;
     border-radius: 30px;
 }
+.formBox span{
+    width: 68%;
+    color: red;
+    font-size: 13.8;
+}
 form{
     display: flex;
     justify-content: center;
@@ -385,6 +402,8 @@ form span{
 .formBox h1{
     align-self: center;
     margin-bottom: 50px;
+    color: rgb(66, 66, 212);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
 .submit{
@@ -553,18 +572,19 @@ footer{
     font-size: 30px;
     color: #ffffff;
  }
- .login-body span{
-    font-size: 30px;
-    color:#e4461f;   
+ .register-box span{
+    width: 68%;
+    color: red;
+    font-size: 13.8;
+
  }
- .register-body span{
-    font-size: 30px;
-    color:#e4461f;   
+ .login-box span{
+    width: 68%;
+    color: red;
+    font-size: 13.8;
+
  }
- .register-body span{
-    font-size: 30px;
-    color:#e4461f;   
- }
+
  .register-body{
     background-image: url("../assets/login7.jpg");
     background-repeat: no-repeat;
@@ -585,7 +605,7 @@ footer{
  .register-box{
     background-color: rgba(224, 93, 5, 0.5);
     width: 500px;
-    height: 839px;
+    height: 859px;
     margin: 30px auto;
     display: flex;
     justify-content: center;
@@ -614,10 +634,10 @@ footer{
  }
 .labelRegister{
     margin-left: 90;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     color: white;
+    font-size: 13px;
 }
-
  .register-box input{
     align-self: center;
     border-color: #e4461f;

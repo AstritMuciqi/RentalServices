@@ -114,14 +114,14 @@ function validationLogin(){
 
   var perdoruesi = document.getElementById("userId").value;
   var emailin = document.getElementById("emailId").value;
-  //var ditaLindjes = document.getElementById("data").value;
+  var ditaLindjes = document.getElementById("data").value;
   var numriTel = document.getElementById("numeriTel").value;
   var fjalkalimi = document.getElementById("pass").value;
   var fjalkalimi2 = document.getElementById("passConfirm").value;
 
   var userCheck = /^[A-Za-z]{4}/;
-  var emailCheck = /^[A-Za-z]{4}/;
-  //var birthCheck = /(((0|1)[0-9]|2[0-9]|3[0-1])\/(0[1-9]|1[0-2])\/((19|20)\d\d))$/;
+  var emailCheck = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+/;
+//   var birthCheck = /^([0-9]{2})\/([0-9]{2})\/([0-9]{4})$/;
   var passwordCheck = /^[A-Za-z]{8}/;
   var numCheck = /^[0-9]{9}/;
 
@@ -136,15 +136,15 @@ function validationLogin(){
   if(emailCheck.test(emailin)){
       document.getElementById("emailError").innerHTML = " ";
   }else{
-      document.getElementById("emailError").innerHTML = " * Email Is Invalid (Please type a minimum 3 characters and a @)  ";
+      document.getElementById("emailError").innerHTML = " * Email Is Invalid (Please type a valid email address)  ";
       return false
   }
-  // if(birthCheck.test(ditaLindjes)){
-  //     document.getElementById("birthError").innerHTML = " ";
-  // }else{
-  //     document.getElementById("birthError").innerHTML = " * Please select your birthday ";
-  //     return false
-  // }
+//   if(birthCheck.test(ditaLindjes)){
+//       document.getElementById("birthError").innerHTML = " ";
+//   }else{
+//       document.getElementById("birthError").innerHTML = " * Please select your birthday ";
+//       return false
+//   }
   if(passwordCheck.test(fjalkalimi)){
       document.getElementById("passError").innerHTML = " ";
 
@@ -152,12 +152,12 @@ function validationLogin(){
       document.getElementById("passError").innerHTML = " * Password Is Invalid (Please type a minimum of 8 characters)  ";
       return false;
   }
-  // if(fjalkalimi == fjalkalimi2){
-  //   document.getElementById("confirmPassError").innerHTML = " ";
-  // }else{
-  //   document.getElementById("confirmPassError").innerHTML = " * Password Is Invalid (Please type a minimum of 8 characters)  ";
-  //   return false
-  // }
+  if(fjalkalimi == fjalkalimi2){
+    document.getElementById("confirmPassError").innerHTML = " ";
+  }else{
+    document.getElementById("confirmPassError").innerHTML = " * Please confirm your Password!  ";
+    return false
+  }
   if(numCheck.test(numriTel)){
       document.getElementById("numError").innerHTML = " ";
       alert("Registered Successfully, please Login!");
