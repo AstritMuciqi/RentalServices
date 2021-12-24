@@ -11,23 +11,23 @@
     <div class="register-box">
         <h1>Sing Up</h1> <br>
         <form action="./login.html" onsubmit="return validationRegister()">
-            <label>Username</label> <br> <input class="inputi" id="userId" type="text"> <br>
+            <label class="labelRegister">Username (*)</label> <input class="inputi" id="userId" type="text"> <br>
             <span style="color: red; font-size:medium;" id="userError"></span> <br>
-            <label>E - Mail</label> <br> <input type="text" id="emailId" class="inputi"> <br>
+            <label class="labelRegister">E - Mail (*)</label>  <input type="text" id="emailId" class="inputi"> <br>
             <span style="color: red; font-size:medium;" id="emailError"></span> <br>
-            <label>Birthday</label> <br>
+            <label class="labelRegister">Birthday</label> 
             <input class="inputi" id="data" type="date"> <br>
             <!-- <span style="color: red; font-size:medium;" id="birthError"></span> <br> -->
-            <label>Password</label> <br>
+            <label class="labelRegister">Password (*)</label> 
             <input class="inputi" id="pass" type="password"> <br>
             <span style="color: red; font-size:medium;" id="passError"></span> <br>
-            <label>Confirm Password</label> <br>
+            <label class="labelRegister">Confirm Password (*)</label> 
             <input class="inputi" id="passConfirm" type="password"> <br>
             <span style="color: red; font-size:medium;" id="confirmPassError"></span> <br>
-            <label>Phone Number</label> <br>
+            <label class="labelRegister">Phone Number (*)</label> 
             <input class="inputi" id="numeriTel" type="number"> <br>
             <span style="color: red; font-size:medium;" id="numError"></span> <br>
-            <label>Have account? <a href="./login.html">Sing In here!</a></label> <br>
+            <label class="labelRegister">Have account? <a style="color: rgb(14, 88, 247);" href="./login.html">Sing In here!</a></label> <br>
             <input type="submit" id="submitButton" class="submit" value="Sing Up" style="color: white;">
         </form>
 
