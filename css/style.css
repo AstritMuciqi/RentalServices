@@ -643,4 +643,60 @@ footer{
     border-color: #e4461f;
     border-radius: 30px;
  }
- 
+/*AboutUs*/
+
+.bodyAbout{
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #000026;
+}
+.about-section{
+    background: url("../assets/AboutUs.jpg") no-repeat left;
+    background-size: 75%;
+    background-color: #000026;
+    overflow: hidden;
+    padding: 100px 0;
+}
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 150px;
+}
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.text{
+    font-size: 15px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+.socials{
+    display: flex;
+    line-height: 38px;
+    justify-content: space-between;
+}
+.socials a{
+    display: inline-block;
+     width: 35px;
+     height: 35px;
+     cursor: pointer;
+     background-color: #33383b;
+     border-radius: 2px;
+     font-size: 20px;
+     color: #ffffff;
+     text-align: center;
+     line-height: 35px;
+     margin-right: 3px;
+     margin-bottom: 5px;
+}
+.socials a:hover{
+    color: #e4461f;
+}
+
+
