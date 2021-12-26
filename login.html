@@ -7,16 +7,24 @@
 </head>
 
 <body class="login-body">
-    <a class="loginTop" href="./index.html"><b>CAR <span>RENTAL</span></b></a>
+    <a class="loginTop" href="./index.html"><b>CAR <span style="color: #e4461f;">RENTAL</span></b></a>
     <div class="login-box">
         <h1>Sing In</h1> <br>
-        <input class="inputi" type="text" value="Username or E - Mail"> <br>
-        <input class="inputi" type="password"> <br> <br>
-        <label>Not registred? <a href="./register.html">Register here!</a></label> <br>
-        <input style="color: white;" class="submit"   type="submit" value="Sing In">
+        <form action="./index.html" onsubmit="return validationLogin()">
+            <label>Email or Username</label> <input class="inputi" id="user" type="text"> <br> <span
+                id="userError"></span> <br>
+            <label>Password</label> <input class="inputi" id="pass" type="password"> <br> <span id="passError"></span>
+            <br>
+            <label>Not registred? <a style="color: rgb(14, 88, 247);" href="./register.html">Register here!</a></label>
+            <br>
+            <input id="loginBtn" style="color: white;" class="submit" type="submit" value="Sing In">
+        </form>
+
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/validimi.js"></script>
+
 </body>
 
 </html>

@@ -2,15 +2,31 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.header{    
+header{ 
     display: flex;
-    width: 100% ;   
+}
+header h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute; 
+    margin: 200px 0 0 390px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 3px;
+    line-height: 1.3;
+}
+video{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    object-fit:fill;
 }
 .logo{
+    position: relative;
     width: 50%;
-    background:  #2a2f2d;
     padding: 25px 95px;
 }
     
@@ -25,14 +41,13 @@
     
 .logo a span{
     color: #e4461f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
     
 .content-nav{
-    
      display: flex;
      width: 50%;
      padding: 20px 60px;
-     background:  #2a2f2d;
     
 }
 .nav{
@@ -53,6 +68,7 @@
     
 }
 .nav ul li a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
     color: white;
     line-height: 50px;
@@ -64,9 +80,68 @@
     color: #e4461f;
 }   
 
-/*TopSection - Home */
+/*Slider - Home */
+#slides {
+    position: relative;
+    height: 450px;
+    padding: 0px;
+    margin: 2px 0 0 0;
+    list-style-type: none;
+}
 
-#slideshow {
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+.slide {
+    font-size: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #333;
+    color: #fff;
+}
+
+.slide:nth-of-type(1) {
+    background-image: url("../assets/Cars-and-DrivingImage.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.slide:nth-of-type(2) {
+    background-image: url("../assets/background4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.slide:nth-of-type(3) {
+    background-image: url("../assets/feedback4.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/* #slideshow {
     position: relative;
 }
 #slideshow div {
@@ -104,7 +179,7 @@
     height: 390px;
     background-image: url("../assets/feedback4.png");
     background-size: 100% 100%;
-}
+} */
  .h4-section{
     color: #e4461f;
     width: auto;
@@ -114,13 +189,55 @@
     color: #ffffff;
     width: auto;
     text-align: center;
+    font-size: 25px;
     letter-spacing: .2rem;
 }
+/*DetialSection */
+.detailSection{
+    width: 100%;
+    height: 390px;
+    margin: 410px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    background-image: url("../assets/contactForm2.jpg");
+}
+.detailSection .foto1{
+    width: 400px;
+    height: 310px;
+    background-image: url("../assets/budget.webp");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 10px 0 10px 0;
+    border-radius: 20px;
+}
+.detailSection .foto2{
+    width: 400px;
+    height: 310px;
+    background-image: url("../assets/onlineRent.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 40px 0 10px 0;
+    border-radius: 20px;
+
+
+}
+.detailSection .foto3{
+    width: 400px;
+    height: 310px;
+    background-image: url("../assets/process.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 70px 0 10px 0;
+    border-radius: 20px;
+
+}
+
+/*Offers Section */
 .offers{
-    margin-top: 402px;
+    margin-top: 2px;
     width: 97%;
     margin-left: 20px;
-    height: 580px;
+    height: 600px;
     border-radius: 30px;    
     display: flex;
     flex-direction: row;
@@ -129,12 +246,13 @@
     justify-content: space-around;
     background-image: url("../assets/background8.jpg");
     background-size: 100% 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .offers1{
     border-radius: 30px;    
     width: 300px;
-    height: 500px;
+    height: 520px;
     margin-top: 60px;
     background-image: url("../assets/handImage.jpg");
     background-size: contain;
@@ -146,6 +264,7 @@
 .offers1 h2{
     text-align: center;
     margin-top: 280px;
+    
 }
 .offers1 p{
     text-align: center;
@@ -171,7 +290,7 @@
     border-radius: 30px;    
     margin-top: 30px;
     width: 300px;
-    height: 500px;
+    height: 520px;
     background-image:url("../assets/golf7.jpg");
     background-size: contain;
     background-repeat: no-repeat ;
@@ -207,7 +326,7 @@
     border-radius: 30px;    
     background-image:url("../assets/jeep.jpeg");
     width: 300px;
-    height: 500px;
+    height: 520px;
     margin-top: 60px;
     background-size: contain;
     background-repeat: no-repeat ;
@@ -251,22 +370,40 @@
     background-size: 100% 100%;
     border-radius: 30px;
 }
+.formBox span{
+    width: 68%;
+    color: red;
+    font-size: 13.8;
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+form textarea{
+    padding: 4px 15px 4px 15px;
+    width: 350px;
+    margin: 0 auto;
+    border-radius: 30px;  
+    border: 2px solid #f3f1f1; 
+}
+form label{
+    margin: 0 auto;
+}
+form span{
+    margin: 0 auto; 
+}
 .inputi{
     width: 350px;
     height: 45px;
     margin: 0 auto ;
     padding: 1em;
-}
-.message{
-    width: 350px;
-    height: 135px;
-    margin: 0 auto ;  
-    padding: 1em;
-}
- 
+} 
 .formBox h1{
     align-self: center;
     margin-bottom: 50px;
+    color: rgb(66, 66, 212);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
 .submit{
@@ -300,7 +437,7 @@ footer{
     text-align: left;
     font: bold 16px sans-serif;
     padding: 50px 50px 60px 50px;
-    margin-top: 80px;
+    margin-top: 2px;
 }
 .footer-distributed .footer-l{
     display: inline-block;
@@ -435,18 +572,19 @@ footer{
     font-size: 30px;
     color: #ffffff;
  }
- .login-body span{
-    font-size: 30px;
-    color:#e4461f;   
+ .register-box span{
+    width: 68%;
+    color: red;
+    font-size: 13.8;
+
  }
- .register-body span{
-    font-size: 30px;
-    color:#e4461f;   
+ .login-box span{
+    width: 68%;
+    color: red;
+    font-size: 13.8;
+
  }
- .register-body span{
-    font-size: 30px;
-    color:#e4461f;   
- }
+
  .register-body{
     background-image: url("../assets/login7.jpg");
     background-repeat: no-repeat;
@@ -456,40 +594,125 @@ footer{
  .login-box{
     background-color: rgba(224, 93, 5, 0.5);
     width: 500px;
-    height: 500px;
-    margin: 150px auto;
+    height: 450px;
+    margin: 35px auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
     border-radius: 30px;
-    background-image: url("../assets/background10.jpg");
+    background-image: url("../assets/contactForm2.jpg");
+ }
+ .register-box{
+    background-color: rgba(224, 93, 5, 0.5);
+    width: 500px;
+    height: 859px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 30px;
+    background-image: url("../assets/contactForm2.jpg");
  }
  .login-box h1{
     align-self: center;
+    color: white;
  }
  .login-box label{
-    align-self: center;
+    color: white;
+    margin-left: 90;
+    margin-bottom: 10px;
  }
  .login-box input{
     align-self: center;
     border-color: #e4461f;
     border-radius: 30px;
  }
- 
-body{
 
-    background-color: aqua;
-
+ .register-box h1{
+    align-self: center;
+    color: white;
+ }
+.labelRegister{
+    margin-left: 90;
+    margin-bottom: 8px;
+    color: white;
+    font-size: 13px;
 }
+ .register-box input{
+    align-self: center;
+    border-color: #e4461f;
+    border-radius: 30px;
+ }
+/*AboutUs*/
+
+.bodyAbout{
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #000026;
+}
+.about-section{
+    background: url("../assets/AboutUs.jpg") no-repeat left;
+    background-size: 75%;
+    background-color: #000026;
+    overflow: hidden;
+    padding: 100px 0;
+}
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 150px;
+}
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.text{
+    font-size: 15px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+.socials{
+    display: flex;
+    line-height: 38px;
+    justify-content: space-between;
+}
+.socials a{
+    display: inline-block;
+     width: 35px;
+     height: 35px;
+     cursor: pointer;
+     background-color: #33383b;
+     border-radius: 2px;
+     font-size: 20px;
+     color: #ffffff;
+     text-align: center;
+     line-height: 35px;
+     margin-right: 3px;
+     margin-bottom: 5px;
+}
+.socials a:hover{
+    color: #e4461f;
+}
+
+
+
 
 /* Products -- Cars */
 
+body{
 
+    background-color: #3b4d64;
+
+}
 .Car-products {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  
   background: #ccc;
   margin: 3em auto;
   padding:  0;
@@ -516,4 +739,4 @@ body{
 }
 
 
-  
+
