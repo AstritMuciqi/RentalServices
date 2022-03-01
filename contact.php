@@ -8,7 +8,7 @@
             Message sent Successfully
             <script LANGUAGE='JavaScript'>
              setTimeout(function () {
-             window.location.href = "contact.php"; //will redirect to your blog page (an ex: blog.html)
+             window.location.href = "./contact.php"; //will redirect to your blog page (an ex: blog.html)
             }, 2000);            
     </script>
         </div>

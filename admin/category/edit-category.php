@@ -25,6 +25,15 @@
                 <div class="row">
         <div class="col-sm-12">
             <div id="add-movie-header">
+            <style>
+                    
+                    #add-movie-header{
+                        font-weight:bold; 
+                        color:black;
+                        background-color: #045de9;
+background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+                    }
+                </style>
                 <h4>Edit Category</h4>
             </div>
             <div id="add-movie-form-container">

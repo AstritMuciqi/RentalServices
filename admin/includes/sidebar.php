@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-touch-icon.png">
@@ -88,7 +89,7 @@ background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
                     <div id="sidebar-items">
                         <ul>
                             <li>
-                                <a href="../contactlist.php">
+                                <a href="../messages/message.php">
                                     <i class="fas fa-tachometer-alt"></i>
                                     <span>Messages</span>
                                     <i class="fas fa-chevron-right"></i>

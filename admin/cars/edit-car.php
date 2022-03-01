@@ -25,7 +25,16 @@
                 <div class="row">
         <div class="col-sm-12">
             <div id="add-movie-header">
-                <h4>Add Car</h4>
+            <style>
+                    
+                    #add-movie-header{
+                        font-weight:bold; 
+                        color:black;
+                        background-color: #045de9;
+background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+                    }
+                </style>
+                <h4>Edit Car</h4>
             </div>
             <div id="add-movie-form-container">
                 <form class="form-horizontal" method="post" id="edit-car-form" action='' autocomplete="off" enctype="multipart/form-data" />

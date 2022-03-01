@@ -4,6 +4,12 @@ CREATE TABLE IF NOT EXISTS `rentals` (
   PRIMARY KEY (`rental_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+CREATE TABLE IF NOT EXISTS `rentals` (
+  `rental_id` int(11) NOT NULL AUTO_INCREMENT,
+  `rental_name` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`rental_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 CREATE TABLE IF NOT EXISTS `brands` (
   `brand_id` int(11) NOT NULL AUTO_INCREMENT,
   `brand_name` varchar(200) DEFAULT NULL,
@@ -15,11 +21,12 @@ CREATE TABLE IF NOT EXISTS `category` (
   `category_name` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`category_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-CREATE TABLE IF NOT EXISTS `category` (
+
+CREATE TABLE IF NOT EXISTS `contactform` (
   `contact_id` int(11) NOT NULL AUTO_INCREMENT,
   `email_or_username` varchar(200) DEFAULT NULL,
   `message_text` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`category_id`)
+  PRIMARY KEY (`contact_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 CREATE TABLE IF NOT EXISTS `cars` (CREATE TABLE IF NOT EXISTS `rentals` (
