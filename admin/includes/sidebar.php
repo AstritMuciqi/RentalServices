@@ -103,7 +103,7 @@ background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
 
                             </li>
                             <li>
-                                <a href="../cars/list-rentals.php">
+                                <a href="../rentals/list-rentals.php">
                                     <i class="fas fa-tv"></i>
                                     <span>Rentals</span>
                                     <i class="fas fa-chevron-right"></i>
