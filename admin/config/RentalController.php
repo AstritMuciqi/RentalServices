@@ -33,7 +33,8 @@
                     
         }
         public function getRentals(){
-            $query = 'SELECT * FROM rentals';
+            $query = 'SELECT * FROM rentals
+            LEFT JOIN imagesRental ON img_ref_rental = rental_id';
             
 
             $results = $this->crud->read($query);
@@ -42,6 +43,7 @@
         }
         public function getRental($rental_id){
             $query = "SELECT * FROM rentals 
+            LEFT JOIN imagesRental ON img_ref_rental = rental_id
             WHERE rental_id = $rental_id";
         
             $results = $this->crud->read($query);
@@ -62,7 +64,7 @@
 
             if(!empty($_FILES["cover_image"]["name"])){
                 //delete pervious image
-                $this->crud->delete("delete from imagesCategory where img_ref_category = $rental_id");
+                $this->crud->delete("delete from imagesRental where img_ref_rental = $rental_id");
                 $this->saveAndUploadRentalImage($rental_id);
             }
             Session::set('success-message', 'Category Edited Successfully!');
