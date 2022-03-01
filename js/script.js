@@ -17,6 +17,37 @@
 // 		return this;
 // 	};
 // }(jQuery));
+// Get the container element
+// var btnContainer = document.getElementById("myUl");
+
+// // Get all buttons with class="btn" inside the container
+// var btns = btnContainer.getElementsByClassName("a-buttom");
+
+// // Loop through the buttons and add the active class to the current/clicked button
+// for (var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function() {
+//     var current = document.getElementsByClassName("active");
+//     current[0].className = current[0].className.replace(" active", "");
+//     this.className += " active";
+//   });
+// }
+
+// $(document).ready(function(){
+//   $('/about.php a.a-buttom').addClass('active');
+// });
+
+// window.onload = function() { 
+//   var all_links = document.getElementById("test-nav-ul").getElementsByTagName("a"),
+//       i=0, len=all_links.length,
+//       full_path = location.href.split('#')[0]; //Ignore hashes?
+
+//   // Loop through each link.
+//   for(; i<len; i++) {
+//       if(all_links[i].href.split("#")[0] == full_path) {
+//           all_links[i].className += " active";
+//       }
+//   }
+// }
 
 var slides = document.querySelectorAll("#slides .slide");
 var currentSlide = 0;

@@ -49,7 +49,7 @@
             <aside id="left-sidebar">
                 <div id="nav-brand-container">
                     <div class = "sidebar-row">
-                        <a href="../../course" id="nav-brand"> Car Rental
+                        <a href="../../../course" id="nav-brand"> Car Rental
                         </a>
                         <i id="bars" class="fas fa-bars"></i>
                     </div>

@@ -5,8 +5,8 @@
         </div>
         <div class="content-nav">
             <nav class="nav">
-                <ul>
-                    <li><a class="a-bottom" style="border-bottom:1px solid red ;" href="#">Home</a></li>
+                <ul class="myUl" id="test-nav-ul">
+                    <li><a class="a-bottom <?php echo ($_SERVER['PHP_SELF'] == "/course/index.php" ? "active" : "");?>"href="./index.php">Home</a></li>
                     <li><a class="a-bottom" href="./car.php">Cars</a></li>
                     <li><a class="a-bottom" href="./about.php">About</a></li>
                     <li><a class="a-bottom" href="./contact.php">Contact</a></li>

@@ -35,9 +35,9 @@ video{
     font-size: 30px;
     color: #ffffff;
 }
-.a-bottom:hover{
+/* .a-bottom:hover{
     border-bottom: 1px solid red;
-}
+} */
     
 .logo a span{
     color: #e4461f;
@@ -78,7 +78,17 @@ video{
     
 .nav ul li a:hover{
     color: #e4461f;
-}   
+    border-bottom: 2px solid red;
+
+
+}  
+.active{
+    border-bottom: 2px solid red;
+} 
+
+
+
+
 
 /*Slider - Home */
 #slides {
@@ -724,11 +734,19 @@ body{
 
 .product {
   flex: 0 0 120px;
-  
-  margin: 40px ;
+  position: relative;
+  width: 350px;
+  height: 433px;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+  transition: all .4s ease;  margin: 40px ;
   padding: 0;
  
 }
+.product:hover {
+    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+    box-shadow: 10px 10px rgba(0,0,0,.25);
+  }
  
 .product img{
 
