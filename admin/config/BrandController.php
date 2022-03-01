@@ -33,7 +33,8 @@
                     
         }
         public function getBrands(){
-            $query = 'SELECT * FROM brands';
+            $query = 'SELECT * FROM brands
+                      LEFT JOIN imagesBrand ON img_ref_brand = brand_id';
             
 
             $results = $this->crud->read($query);
@@ -42,7 +43,8 @@
         }
         public function getBrand($brand_id){
             $query = "SELECT * FROM brands 
-            WHERE brand_id = $brand_id";
+                        LEFT JOIN imagesBrand ON img_ref_brand = brand_id
+                        WHERE brand_id = $brand_id";
         
             $results = $this->crud->read($query);
             return $results;
@@ -57,8 +59,6 @@
                     WHERE brand_id = $brand_id ";
 
             $this->crud->update($sql);
-
-            $this->createBrand( $brand_id );
 
             if(!empty($_FILES["cover_image"]["name"])){
                 //delete pervious image

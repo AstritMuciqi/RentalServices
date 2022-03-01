@@ -33,7 +33,8 @@
                     
         }
         public function getCategories(){
-            $query = 'SELECT * FROM category';
+            $query = 'SELECT * FROM category 
+                        LEFT JOIN imagesCategory ON img_ref_category = category_id';
             
 
             $results = $this->crud->read($query);
@@ -41,7 +42,8 @@
 
         }
         public function getCategory($category_id){
-            $query = "SELECT * FROM category 
+            $query = "SELECT * FROM category
+            LEFT JOIN imagesCategory ON img_ref_category = category_id 
             WHERE category_id = $category_id";
         
             $results = $this->crud->read($query);
@@ -57,8 +59,6 @@
                     WHERE category_id = $category_id ";
 
             $this->crud->update($sql);
-
-            $this->createCategory( $category_id );
 
             if(!empty($_FILES["cover_image"]["name"])){
                 //delete pervious image

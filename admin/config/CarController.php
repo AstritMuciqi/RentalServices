@@ -121,7 +121,7 @@
             move_uploaded_file($_FILES["cover_image"]["tmp_name"], $dir);
 
             $image_info = [
-                'img_path' => str_replace('../','',$dir),
+                'img_path' => str_replace('../../','',$dir),
                 'img_ref_car' => $car_id
             ];
 
