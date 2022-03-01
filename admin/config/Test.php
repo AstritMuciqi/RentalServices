@@ -7,8 +7,17 @@ $data_array = [
     'car_end' => "2005-11-04",
     'car_name' => 'bmw',
 ];
+// $data_array = [
+//     'rental_name' => 'Besiana Rent'
+// ];
 
 $crud = new Crud();
+
+//$crud->create($data_array, 'rentals');
+//$results = $crud->read('SELECT * FROM rentals');
+//var_dump($results);
+//$crud->update("UPDATE rentals SET rental_name = 'Besiana Rent' where rental_id = 1");
+//$crud->delete('DELETE FROM rentals where rental_id = 4');
 
 // $crud->create($data_array, 'cars');
 // // getdbconnection();

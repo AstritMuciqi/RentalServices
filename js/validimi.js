@@ -81,6 +81,7 @@ function validationContact(){
       document.getElementById("messageError").innerHTML = " * Message Is Invalid (Please type a minimum of 3 characters)  ";
       return false
   }
+  
 
 }
 
