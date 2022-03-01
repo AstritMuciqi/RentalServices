@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Movies</title>
+    <title>Dashboard</title>
     <meta charset="utf-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -46,26 +46,44 @@
     <div class="row">
      <div class ="col-sm-12" style="padding-left:0px;padding-right:0px;">
     <div id="main-container">
-            <aside id="left-sidebar">
-                <div id="nav-brand-container">
+            <aside style="background-color: #eec0c6;
+                          background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+                          " id="left-sidebar">
+                <div style="background-color: #eec0c6;
+                          background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+                          " id="nav-brand-container">
                     <div class = "sidebar-row">
-                        <a href="../../../course" id="nav-brand"> Car Rental
+                        <a style="font-weight:bold; color:black;" href="../../../course" id="nav-brand"> <b>Car Rental</b> 
                         </a>
                         <i id="bars" class="fas fa-bars"></i>
                     </div>
                 </div>
-                    <div id="profile-pic-container">
+                         <style>
+                            .btn.btn-edit-profile{
+                                background-color: #045de9;
+background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+                            }
+                        </style>
+                    <div style="background-color: #6a93cb;
+                          background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);" id="profile-pic-container">
                         <div class = "sidebar-row">
                             <img src="../../assets/admin.jpg" height="60px" width="60px">
                             <ul id="button-container">
                                 <li><strong><i>Welcome!</i> John Doe</strong><span class="active"></span></li>
                                 <li style="color:#4f5967; font-size:10px;font-weight: 800">ADMINISTRATOR</li>
                                 <li>
+                                
                                     <button class = "btn btn-edit-profile">Edit Profile</button>
                                 </li>
                             </ul>
                         </div>
                     </div>
+                    <style>
+                        span{
+                            color:black;
+                            font-weight:bold;
+                        }
+                    </style>
                 <div class = "sidebar-row">
                     <div id="sidebar-items">
                         <ul>
@@ -142,7 +160,7 @@
             </aside>
         <div style="width:100%;padding-bottom:40px" id="main-panel">
             <div id="notifications-container">
-                    <h3>Cars</h3>
+                    <h3>Data Operations</h3>
                     <ul style="display: flex;margin-left:auto">
                         <li>
                             <a class="nav-link">

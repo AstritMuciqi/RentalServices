@@ -30,7 +30,7 @@ footer{
     margin-bottom:0px;
 }
 #left-sidebar{
-    background-color: #3c4e62;
+    background-color: #17809b; 
     width: 265px;
     height: 100%;
     color: white;
@@ -63,9 +63,6 @@ a:hover{
 }
 #notifications-container ul li a img{
     border-radius: 50px;
-}
-
-#notification-container #sidebar-row{
 }
 
 nav{
@@ -149,9 +146,7 @@ nav{
 }
 
 
-a{
-   /*color:#74818d !important;*/
-}
+
 
 #sidebar-items ul{
     list-style: none;
@@ -257,7 +252,7 @@ hr{
     background-color: #ebecee;
     text-transform: uppercase;
 
-    color: #989da0;
+    color: #000000;
 }
 
 #movies td {
@@ -399,7 +394,7 @@ nav a{
     background: hsla(0,0%,100%,.5);
        padding-left:23px;
     font-size: 11px;
-    etter-spacing: .5px;
+    letter-spacing: .5px;
     transition: background .2s ease-in-out,font-size .2s ease-in-out .1s;
     text-align:center;
     line-height: 24px

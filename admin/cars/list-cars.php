@@ -33,8 +33,14 @@
                     </ul>
                 </div> 
                 <div id ="add-btn-container">
+                    <style>
+                        .btn.btn-add{
+                            background-color: #045de9;
+background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+                        }
+                    </style>
                     <div class = "sidebar-row">
-                        <a href="add-car.php" class = "btn btn-add">
+                        <a  href="add-car.php" class = "btn btn-add">
                         <i class="fas fa-plus"></i>
                         Add New Car</a>
                     </div>    
@@ -48,6 +54,12 @@
                 
                 ?>
                 <table id="movies">
+                    <style>
+                        #movies th {
+                            font-weight:bold; 
+                            color:black;
+                        }
+                    </style>
                     <tr>
                         <th>Car Name</th> <th>Car Price</th> <th>Rental</th> <th>Brand</th> <th>Category</th> <th>Car Due Time</th><th>Cover Imagge</th> <th>Actions</th>
                     </tr>

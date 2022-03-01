@@ -48,6 +48,16 @@
                 
                 ?>
                 <table id="movies">
+                <style>
+                        .btn.btn-add{
+                            background-color: #045de9;
+background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+                        }
+                        #movies th {
+                            font-weight:bold; 
+                            color:black;
+                        }
+                    </style>
                     <tr>
                         <th>Category Name</th> <th>Cover Imagge</th> <th>Actions</th>
                     </tr>
