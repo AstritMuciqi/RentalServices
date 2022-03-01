@@ -31,29 +31,43 @@
         <li class="slide">Slide 5</li> -->
     </ul>
     <div class="offers">
+    <?php 
+      include_once "./admin/config/CarController.php";
+
+      $carController = new CarController();
+
+      $cars = $carController->getCars();
+                
+    ?>
         <div class="offers1">
             <h2>Rent <br> a perfect car <br> for any occasion</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad facere architecto asperiores hic.</p>
             <button>Let's go</button>
         </div>
+        
+        <?php $count = 0;
+         foreach($cars as $key => $car){  
+             $count++;
+             if($count==3)
+                break;
+         ?>
+            
         <div class="offers2">
-            <img style="width: 40px; height: 60px; margin: 1em;" src="./assets/ribbon.png" alt="">
-            <p style="margin-top: 193px;">Price:</p>
-            <h2>$18/day</h2>
+            <img style="width: 40px; height: 60px; margin: 1em; position:absolute" src="./assets/ribbon.png" alt="">
+            <img src="./<?=$car['img_path'] ?>" style="height:50%;width:100%;border-top-left-radius:11%;border-top-right-radius:11%">
+
+            <p style="">Price:</p>
+            <h2>$<?= $car['car_price'] ?>/day</h2>
             <p>Model:</p>
-            <h2>Golf 7 - GTD</h2>
+            <h2><?= $car['car_name'] ?></h2>
+            <p>Due Data:</p>
+            <h4><?= $car['car_start'] ?>/<?= $car['car_end'] ?></h4>
             <br>
             <button>View Deal</button>
         </div>
-        <div class="offers3">
-            <img style="width: 40px; height: 60px; margin: 1em;" src="./assets/best.png" alt="">
-            <p style="margin-top: 193px;">Price:</p>
-            <h2>$22/day</h2>
-            <p>Model:</p>
-            <h2>Jeep Grand Cherokee</h2>
-            <br>
-            <button>View Deal</button>
-        </div>
+        <?php  
+         } ?>
+
     </div>
 <?php include("includes/footer.php"); ?>
 

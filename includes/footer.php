@@ -8,7 +8,7 @@
                 <a href="./contact.php">Contact</a> <br>
                 <a href="./register.php">Register</a> <br>
                 <a href="./login.php">Login</a> <br>
-                <a href="admin">Admin Panel</a>
+                <a href="admin/list-cars.php">Admin Panel</a>
 
             </p>
             <p class="footer-company-name">Copyright © 2022 <strong>CAR RENTAL</strong>
