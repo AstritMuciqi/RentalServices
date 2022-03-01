@@ -1,10 +1,3 @@
-<?php 
-    include_once "./config/Session.php";
-
-    Session::start();
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,8 +18,13 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <link href="../admin-css/style.css" rel="stylesheet" type="text/css">
-    <link href="../admin-css/jquery.toast.min.css" rel="stylesheet" type="text/css">
+
+    <link href="../../admin-css/style.css" rel="stylesheet" type="text/css">
+    <link href="../../admin-css/datepicker.min.css" rel="stylesheet" type="text/css">
+    <link href="../../admin-css/chosen.min.css" rel="stylesheet" type="text/css">
+
+
+
 
     <!-- Include English language -->
     <script src="js/plugins/datepicker/dist/js/i18n/datepicker.en.js"></script>
@@ -51,14 +49,14 @@
             <aside id="left-sidebar">
                 <div id="nav-brand-container">
                     <div class = "sidebar-row">
-                        <a id="nav-brand"> GoodMovies
+                        <a href="../../course" id="nav-brand"> Car Rental
                         </a>
                         <i id="bars" class="fas fa-bars"></i>
                     </div>
                 </div>
                     <div id="profile-pic-container">
                         <div class = "sidebar-row">
-                            <img src="../assets/images/admin.jpg" height="60px" width="60px">
+                            <img src="../../assets/admin.jpg" height="60px" width="60px">
                             <ul id="button-container">
                                 <li><strong><i>Welcome!</i> John Doe</strong><span class="active"></span></li>
                                 <li style="color:#4f5967; font-size:10px;font-weight: 800">ADMINISTRATOR</li>
@@ -72,58 +70,63 @@
                     <div id="sidebar-items">
                         <ul>
                             <li>
-                                <a href="admin.php">
+                                <a href="../contactlist.php">
                                     <i class="fas fa-tachometer-alt"></i>
-                                    <span>Dashboard</span>
+                                    <span>Messages</span>
                                     <i class="fas fa-chevron-right"></i>
                                 </a>
                             </li>
                             <li>
-                                <a  href="admin.php">
+                                <a  href="../cars/list-cars.php">
                                     <i class="fas fa-file-video"></i>
-                                    <span>Movies</span>
+                                    <span>Cars</span>
                                     <i class="fas fa-chevron-right"></i>
                                 </a>
 
                             </li>
                             <li>
-                                <a>
+                                <a href="../cars/list-cars.php">
                                     <i class="fas fa-tv"></i>
-                                    <span>Genres</span>
+                                    <span>Rentals</span>
                                     <i class="fas fa-chevron-right"></i>
                                 </a>
                             </li>
                             <li>
-                                <a>
-                                    <i class="far fa-images"></i>
-                                    <span>Movie Icons</span>
+                                <a href="../brands/list-brands.php">
+                                    <i class="fas fa-tv"></i>
+                                    <span>Brands</span>
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </li><li>
+                                <a href="../category/list-categories.php">
+                                    <i class="fas fa-tv"></i>
+                                    <span>Category</span>
                                     <i class="fas fa-chevron-right"></i>
                                 </a>
                             </li>
-                            <span style="color:#2d3e50">EXTRAS</span>
-                                <li>
-                                    <a>
-                                        <i class="fas fa-tachometer-alt"></i>
-                                        <span>Dashboard</span>
-                                        <i class="fas fa-chevron-right"></i>
-                                    </a>
-                                </li>
+                            <span style="color:#2d3e50">EXTRAS</span>                             
                                 <li>
                                     <a>
                                         <i class="fas fa-users"></i>
                                         <span>Users</span>
+                                        <i class="fas fa-chevron-right"></i>
+
                                     </a>
                                 </li>
                             <li>
                                 <a>
                                     <i class="fas fa-users-cog"></i>
                                     <span>User Config</span>
+                                    <i class="fas fa-chevron-right"></i>
+
                                 </a>
                             </li>
                             <li>
                                 <a>
                                     <i class="fas fa-money-check-alt"></i>
                                     <span>Payment Methods</span>
+                                    <i class="fas fa-chevron-right"></i>
+
                                 </a>
                             </li>
                             <li>
@@ -159,7 +162,7 @@
                         </li>
                         <li>
                             <a class="nav-link">
-                                <img src="../assets/images/admin.jpg" height="25px" width="25px">
+                                <img src="../../assets/admin.png" height="25px" width="25px">
                             </a>
 
                         </li>
@@ -172,100 +175,3 @@
                     </ul>
             </div>
             
-            <div id="users-container">
-                <div id="pagination-container">
-                    <ul style="display:flex; position:relative;margin-top:6px">
-                        <li>Show</li>
-                        <li>
-                            <select name="per_page" id="per_page">
-                                <option >5</option>
-                                <option selected>10</option>
-                                <option  >15</option>
-                                <option >20</option>
-                            </select>
-                        </li>
-                        <li>entries</li>
-                    </ul>
-                    <ul style="display:flex;margin-left: auto" class="paginator-ul">
-                        <li class='page-item active'>
-                            <a class = 'page-link'  href='#' class = 'page-link'>1</a>
-                        </li><li class='page-item '>
-                            <a class = 'page-link'  href='#' class = 'page-link'>2</a>
-                        </li>
-                        <li class='page-item '>
-                            <a class = 'page-link'  href='#' class = 'page-link'>3</a>
-                        </li>                    
-                    </ul>
-                </div> 
-                <div id ="add-btn-container">
-                    <div class = "sidebar-row">
-                        <a href="add-car.php" class = "btn btn-add">
-                        <i class="fas fa-plus"></i>
-                        Add New Car</a>
-                    </div>    
-                </div>           
-                <?php 
-                    include_once "./config/CarController.php";
-
-                    $carController = new CarController();
-
-                    $cars = $carController->getCars();
-                
-                ?>
-                <table id="movies">
-                    <tr>
-                        <th>Car Name</th> <th>Car Price</th> <th>Rental</th> <th>Brand</th> <th>Category</th> <th>Car Due Time</th><th>Cover Imagge</th> <th>Actions</th>
-                    </tr>
-                        <?php foreach($cars as $key => $car){ ?>
-                            
-                            <tr>
-                                <td><?= $car['car_name'] ?></td>
-                                <td><?= $car['car_price'] ?> EURO</td>
-                                <td><?= $car['rental_name'] ?></td>
-                                <td><?= $car['brand_name'] ?></td>
-                                <td><?= $car['category_name'] ?></td>
-                                <td><?= $car['car_start'] ?> <br> / <?= $car['car_end'] ?></td>
-                                <td style="width:15px"><img src="../<?=$car['img_path'] ?>" height="25px" width="25px"></td>
-                                <td style="width:15px">
-                                    <a href="edit-car.php?id=<?= $car['car_id']?>">edit</a>
-                                    <a href="admin.php?action=edit-movie">delete</a>
-                                </td>   
-                            </tr>   
-                        <?php } ?>
-                     
-                </table>
-            </div>            
-        </div>
-            <!-- Footer -->
-            <footer style="position:absolute; bottom:0;width:98%" class="page-footer font-small blue">
-
-                <!-- Copyright -->
-                <div class="footer-copyright text-center py-3">© 2019 Copyright:
-                    <a href="https://mdbootstrap.com/education/bootstrap/"> goodmovies</a>
-                </div>
-                <!-- Copyright -->
-
-            </footer>
-            <!-- Footer -->
-            </div>
-
-        </div>
-    </div>
-</div>
-    </div>
-    <script src="../js/jquery.toast.min.js"></script>
-    <?php if(Session::exists('success-message')){?>
-    <script>
-        $.toast({
-            heading: 'Information',
-            text: '<?= Session::get('success-message')?>',
-            showHideTransition: 'slide',
-            icon: 'info',
-            position: 'bottom-right'
-        })
-    </script>
-    <?php } 
-    Session::destroy('success-message');
-    ?>
-</body>
-</html>
