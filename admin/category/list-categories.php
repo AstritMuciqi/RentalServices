@@ -40,24 +40,24 @@
                     </div>    
                 </div>           
                 <?php 
-                    include_once "../config/CarController.php";
+                    include_once "../config/CategoryController.php";
 
-                    $carController = new CarController();
+                    $categoryController = new CategoryController();
 
-                    $cars = $carController->getCars();
+                    $categories = $categoryController->getCategories();
                 
                 ?>
                 <table id="movies">
                     <tr>
                         <th>Category Name</th> <th>Cover Imagge</th> <th>Actions</th>
                     </tr>
-                        <?php foreach($cars as $key => $car){ ?>
+                        <?php foreach($categories as $key => $category){ ?>
                             
                             <tr>
-                                <td><?= $car['car_name'] ?></td>
-                                <td style="width:15px"><img src="../<?=$car['img_path'] ?>" height="25px" width="25px"></td>
+                                <td><?= $category['category_name'] ?></td>
+                                <td style="width:15px"><img src="../../<?=$category['img_path'] ?>" height="25px" width="25px"></td>
                                 <td style="width:15px">
-                                    <a href="edit-category.php?id=<?= $car['car_id']?>">edit</a>
+                                    <a href="edit-category.php?id=<?= $category['category_id']?>">edit</a>
                                     <a href="admin.php?action=edit-movie">delete</a>
                                 </td>   
                             </tr>   
@@ -66,17 +66,8 @@
                 </table>
             </div>            
         </div>
-            <!-- Footer -->
-            <footer style="position:absolute; bottom:0;width:98%" class="page-footer font-small blue">
+        <?php include "../includes/footer.php" ?>
 
-                <!-- Copyright -->
-                <div class="footer-copyright text-center py-3">© 2019 Copyright:
-                    <a href="https://mdbootstrap.com/education/bootstrap/"> rental car</a>
-                </div>
-                <!-- Copyright -->
-
-            </footer>
-            <!-- Footer -->
             </div>
 
         </div>

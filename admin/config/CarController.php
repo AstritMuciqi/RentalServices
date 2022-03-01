@@ -111,7 +111,7 @@
         }
         public function saveAndUploadCarImage($car_id){
 
-            $dir = "../assets/car_$car_id";
+            $dir = "../../assets/car_$car_id";
             if(!file_exists($dir)){
                 mkdir($dir, 0777, true);
             }

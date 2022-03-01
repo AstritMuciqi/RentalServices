@@ -65,6 +65,33 @@ CREATE TABLE IF NOT EXISTS `images` (
   CONSTRAINT `fk_img_ref_car` FOREIGN KEY (`img_ref_car`) REFERENCES `cars` (`car_id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+CREATE TABLE IF NOT EXISTS `imagesBrand` (
+  `img_id` int(11) NOT NULL AUTO_INCREMENT,
+  `img_path` varchar(200) DEFAULT NULL,
+  `img_ref_brand` int(11) DEFAULT NULL,
+  PRIMARY KEY (`img_id`),
+  KEY `fk_img_ref_brand` (`img_ref_brand`),
+  CONSTRAINT `fk_img_ref_brand` FOREIGN KEY (`img_ref_brand`) REFERENCES `brands` (`brand_id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS `imagesCategory` (
+  `img_id` int(11) NOT NULL AUTO_INCREMENT,
+  `img_path` varchar(200) DEFAULT NULL,
+  `img_ref_category` int(11) DEFAULT NULL,
+  PRIMARY KEY (`img_id`),
+  KEY `fk_img_ref_category` (`img_ref_category`),
+  CONSTRAINT `fk_img_ref_category` FOREIGN KEY (`img_ref_category`) REFERENCES `category` (`category_id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS `imagesRental` (
+  `img_id` int(11) NOT NULL AUTO_INCREMENT,
+  `img_path` varchar(200) DEFAULT NULL,
+  `img_ref_rental` int(11) DEFAULT NULL,
+  PRIMARY KEY (`img_id`),
+  KEY `fk_img_ref_rental` (`img_ref_rental`),
+  CONSTRAINT `fk_img_ref_rental` FOREIGN KEY (`img_ref_rental`) REFERENCES `rentals` (`rental_id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 
 CREATE TABLE IF NOT EXISTS `cr_rentals_brands_category` (
   `crbc_id` int(11) NOT NULL AUTO_INCREMENT,

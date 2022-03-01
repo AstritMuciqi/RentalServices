@@ -2,14 +2,14 @@
     include_once "../config/Session.php";
 
     Session::start();
-    include_once "../config/CarController.php";
+    include_once "../config/CategoryController.php";
 
-    $carController = new CarController();
+    $categoryController = new CategoryController();
 
-    $car = $carController->getCar($_GET['id']);
+    $category = $categoryController->getCategory($_GET['id']);
     if(($_SERVER['REQUEST_METHOD'] == 'POST')){
         
-        $carController->editCar($_GET['id']);
+        $categoryController->editCategory($_GET['id']);
 
         // $carController->addCar();
          
@@ -33,14 +33,14 @@
                     <div class="form-group">
                         <label class="control-label col-sm-2" for="email">Category Name:</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="title" placeholder="" name="category_name" value="<?= $car[0]['car_name'] ?>">
+                            <input type="text" class="form-control" id="title" placeholder="" name="category_name" value="<?= $category[0]['category_name'] ?>">
                                         <span class="help-block"></span>
                         </div>
                     </div>                   
                     <div class="form-group">
                         <label class="control-label col-sm-2" for="year">Cover Image:</label>
                         <div class="col-sm-10">
-                            <img src="../<?= $car[0]['img_path'] ?>" width="194" height="259" style="margin-buttom:15px" alt="">
+                            <img src="../../<?= $category[0]['img_path'] ?>" width="194" height="259" style="margin-buttom:15px" alt="">
                             <input type="file" name="cover_image" class="form-control" id="customFile" value="">
                                         <span class="help-block"></span>
                         </div>
@@ -55,17 +55,8 @@
             </div>
         </div> 
     </div>
-    <!-- Footer -->
-    <footer class="page-footer font-small blue">
+    <?php include "../includes/footer.php" ?>
 
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2019 Copyright:
-            <a href="https://mdbootstrap.com/education/bootstrap/"> goodmovies</a>
-        </div>
-        <!-- Copyright -->
-
-    </footer>
-    <!-- Footer -->
     </div>
 
         </div>

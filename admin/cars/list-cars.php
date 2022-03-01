@@ -60,7 +60,7 @@
                                 <td><?= $car['brand_name'] ?></td>
                                 <td><?= $car['category_name'] ?></td>
                                 <td><?= $car['car_start'] ?> <br> / <?= $car['car_end'] ?></td>
-                                <td style="width:15px"><img src="../<?=$car['img_path'] ?>" height="25px" width="25px"></td>
+                                <td style="width:15px"><img src="../../<?=$car['img_path'] ?>" height="25px" width="25px"></td>
                                 <td style="width:15px">
                                     <a href="edit-car.php?id=<?= $car['car_id']?>">edit</a>
                                     <a href="admin.php?action=edit-movie">delete</a>
@@ -71,17 +71,8 @@
                 </table>
             </div>            
         </div>
-            <!-- Footer -->
-            <footer style="position:absolute; bottom:0;width:98%" class="page-footer font-small blue">
-
-                <!-- Copyright -->
-                <div class="footer-copyright text-center py-3">© 2019 Copyright:
-                    <a href="https://mdbootstrap.com/education/bootstrap/"> goodmovies</a>
-                </div>
-                <!-- Copyright -->
-
-            </footer>
-            <!-- Footer -->
+        <?php include "../includes/footer.php" ?>
+           
             </div>
 
         </div>

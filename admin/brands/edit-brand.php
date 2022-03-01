@@ -2,14 +2,14 @@
     include_once "../config/Session.php";
 
     Session::start();
-    include_once "../config/CarController.php";
+    include_once "../config/BrandController.php";
 
-    $carController = new CarController();
+    $brandController = new BrandController();
 
-    $car = $carController->getCar($_GET['id']);
+    $brand = $brandController->getBrand($_GET['id']);
     if(($_SERVER['REQUEST_METHOD'] == 'POST')){
         
-        $carController->editCar($_GET['id']);
+        $brandController->editBrand($_GET['id']);
 
         // $carController->addCar();
          
@@ -33,14 +33,14 @@
                     <div class="form-group">
                         <label class="control-label col-sm-2" for="email">Brand Name:</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="title" placeholder="" name="brand_name" value="<?= $car[0]['car_name'] ?>">
+                            <input type="text" class="form-control" id="title" placeholder="" name="brand_name" value="<?= $brand[0]['brand_name'] ?>">
                                         <span class="help-block"></span>
                         </div>
                     </div>                   
                     <div class="form-group">
                         <label class="control-label col-sm-2" for="year">Cover Image:</label>
                         <div class="col-sm-10">
-                            <img src="../<?= $car[0]['img_path'] ?>" width="194" height="259" style="margin-buttom:15px" alt="">
+                            <img src="../../<?= $brand[0]['img_path'] ?>" width="194" height="259" style="margin-buttom:15px" alt="">
                             <input type="file" name="cover_image" class="form-control" id="customFile" value="">
                                         <span class="help-block"></span>
                         </div>
@@ -55,17 +55,8 @@
             </div>
         </div> 
     </div>
-    <!-- Footer -->
-    <footer class="page-footer font-small blue">
+    <?php include "../includes/footer.php" ?>
 
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2019 Copyright:
-            <a href="https://mdbootstrap.com/education/bootstrap/"> goodmovies</a>
-        </div>
-        <!-- Copyright -->
-
-    </footer>
-    <!-- Footer -->
     </div>
 
         </div>

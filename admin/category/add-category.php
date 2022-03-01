@@ -5,10 +5,10 @@
 
     if(($_SERVER['REQUEST_METHOD'] == 'POST')){
         
-        include_once "../config/CarController.php";
+        include_once "../config/CategoryController.php";
 
-        $carController = new CarController();
-        $carController->addCar();
+        $categoryController = new CategoryController();
+        $categoryController->addCategory();
          
     }
 
@@ -50,17 +50,8 @@
             </div>
         </div> 
     </div>
-    <!-- Footer -->
-    <footer class="page-footer font-small blue">
+    <?php include "../includes/footer.php" ?>
 
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2019 Copyright:
-            <a href="https://mdbootstrap.com/education/bootstrap/"> goodmovies</a>
-        </div>
-        <!-- Copyright -->
-
-    </footer>
-    <!-- Footer -->
     </div>
 
         </div>
