@@ -10,14 +10,15 @@
     <a class="loginTop" href="./index.php"><b>CAR <span style="color: #e4461f;">RENTAL</span></b></a>
     <div class="login-box">
         <h1>Sing In</h1> <br>
-        <form action="./index.html" onsubmit="return validationLogin()">
-            <label>Email or Username</label> <input class="inputi" id="user" type="text"> <br> <span
+              <!-- action="./index.html" -->
+        <form  action="LoginVerify.php" onsubmit="return validationLogin()"  method="post">
+            <label>Email or Username</label> <input class="inputi" id="user" type="text" name="name"required> <br> <span
                 id="userError"></span> <br>
-            <label>Password</label> <input class="inputi" id="pass" type="password"> <br> <span id="passError"></span>
+            <label>Password</label> <input class="inputi" id="pass" type="password" name="password" required> <br> <span id="passError"></span>
             <br>
             <label>Not registred? <a style="color: rgb(14, 88, 247);" href="./register.php">Register here!</a></label>
             <br>
-            <input id="loginBtn" style="color: white;" class="submit" type="submit" value="Sing In">
+            <input id="loginBtn" name="submit-btn"  style="color: white;" class="submit" type="submit"  value="Sing In">
         </form>
 
     </div>

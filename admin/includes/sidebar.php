@@ -125,7 +125,7 @@ background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
                             </li>
                             <span style="color:#2d3e50">EXTRAS</span>                             
                                 <li>
-                                    <a>
+                                    <a href="../../Dashboard.php">
                                         <i class="fas fa-users"></i>
                                         <span>Users</span>
                                         <i class="fas fa-chevron-right"></i>
