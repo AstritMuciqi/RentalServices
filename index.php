@@ -42,7 +42,7 @@
         <div class="offers1">
             <h2>Rent <br> a perfect car <br> for any occasion</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad facere architecto asperiores hic.</p>
-            <button>Let's go</button>
+            <button><a style="text-decoration:none; color:white;" href="./car.php">Let's go</a></button>
         </div>
         
         <?php $count = 0;
@@ -54,19 +54,15 @@
             
         <div class="offers2">
             <img style="width: 40px; height: 60px; margin: 1em; position:absolute" src="./assets/ribbon.png" alt="">
-            <img src="./<?=$car['img_path'] ?>" style="height:50%;width:100%;border-top-left-radius:11%;border-top-right-radius:11%">
-
-            <p style="">Price:</p>
-            <h2>$<?= $car['car_price'] ?>/day</h2>
-            <p>Model:</p>
+            <img src="./<?=$car['img_path'] ?>" style="height:55%;width:100%;border-top-left-radius:11%;border-top-right-radius:11%">
             <h2><?= $car['car_name'] ?></h2>
+            <h6 style="color:#CE3175;font-size:20px;font-weight:bold;"><?= $car['car_price'] ?> Euro/Day</h6>
             <p>Due Data:</p>
-            <h4><?= $car['car_start'] ?>/<?= $car['car_end'] ?></h4>
+            <h6><?= $car['car_start'] ?> <i style="font-style:normal;color:#CE3175;"> / </i><?= $car['car_end']?></h6>
             <br>
-            <button>View Deal</button>
+            <button><a style="text-decoration:none; color:white;" href="./detailCar.php?id=<?= $car['car_id'] ?>">View Deal</a></button>
         </div>
-        <?php  
-         } ?>
+        <?php  } ?>
 
     </div>
 <?php include("includes/footer.php"); ?>

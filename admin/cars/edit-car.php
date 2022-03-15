@@ -143,7 +143,7 @@ background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
                     <div class="form-group">
                         <label class="control-label col-sm-2" for="year">Cover Image:</label>
                         <div class="col-sm-10">
-                            <img src="../<?= $car[0]['img_path'] ?>" width="194" height="259" style="margin-buttom:15px" alt="">
+                            <img src="../../<?= $car[0]['img_path'] ?>" width="194" height="259" style="margin-buttom:15px" alt="">
                             <input type="file" name="cover_image" class="form-control" id="customFile" value="">
                                         <span class="help-block"></span>
                         </div>

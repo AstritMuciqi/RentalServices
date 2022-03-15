@@ -1,5 +1,6 @@
 <?php
     include_once "Crud.php";
+    include_once "Session.php";
 
     class CarController{
 
@@ -98,7 +99,7 @@
 
             $this->crud->update($sql);
 
-            $this->createCBRC($_POST['rentals'], $_POST['brands'], $_POST['category'], $car_id );
+            // $this->createCBRC($_POST['rentals'], $_POST['brands'], $_POST['category'], $car_id );
 
             if(!empty($_FILES["cover_image"]["name"])){
                 //delete pervious image
@@ -106,6 +107,17 @@
                 $this->saveAndUploadCarImage($car_id);
             }
             Session::set('success-message', 'Car Edited Successfully!');
+
+            header('Location: list-cars.php'); 
+        }
+        public function deleteCar($car_id){           
+
+            $sql = "DELETE FROM cars
+                    WHERE car_id = $car_id ";
+
+            $this->crud->delete($sql);
+
+            Session::set('success-message', 'Car Deleted Successfully!');
 
             header('Location: list-cars.php'); 
         }

@@ -65,11 +65,11 @@ background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
                             
                             <tr>
                                 <td><?= $category['category_name'] ?></td>
-                                <td style="width:15px"><img src="../../<?=$category['img_path'] ?>" height="25px" width="25px"></td>
-                                <td style="width:15px">
-                                    <a href="edit-category.php?id=<?= $category['category_id']?>">edit</a>
-                                    <a href="admin.php?action=edit-movie">delete</a>
-                                </td>   
+                                <td style="width:15px"><img src="../../<?=$category['img_path'] ?>" height="100%" width="100%"></td>
+                                <td style="width:15px;">
+                                    <a href="edit-category.php?id=<?= $category['category_id']?>">Edit</a> <br> <hr style="border-top: 2px solid black;">
+                                    <a style="color:red;" class="links" href="deleteCategory.php?id=<?= $category["category_id"] ?>">Delete</a>        
+                                </td>    
                             </tr>   
                         <?php } ?>
                      

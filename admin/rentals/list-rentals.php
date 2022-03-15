@@ -59,17 +59,17 @@ background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
                         }
                     </style>
                     <tr>
-                        <th>Category Name</th> <th>Cover Imagge</th> <th>Actions</th>
+                        <th>Rental Name</th> <th>Cover Imagge</th> <th>Actions</th>
                     </tr>
                         <?php foreach($rentals as $key => $rental){ ?>
                             
                             <tr>
                                 <td><?= $rental['rental_name'] ?></td>
-                                <td style="width:15px"><img src="../../<?=$rental['img_path'] ?>" height="25px" width="25px"></td>
-                                <td style="width:15px">
-                                    <a href="edit-rental.php?id=<?= $rental['rental_id']?>">edit</a>
-                                    <a href="admin.php?action=edit-movie">delete</a>
-                                </td>   
+                                <td style="width:15px"><img src="../../<?=$rental['img_path'] ?>" height="100%" width="100%"></td>
+                                <td style="width:15px;">
+                                    <a href="edit-rental.php?id=<?= $rental['rental_id']?>">Edit</a> <br> <hr style="border-top: 2px solid black;">
+                                    <a style="color:red;" class="links" href="deleteRental.php?id=<?= $rental["rental_id"] ?>">Delete</a>        
+                                </td>     
                             </tr>   
                         <?php } ?>
                      

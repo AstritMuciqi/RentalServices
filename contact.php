@@ -19,7 +19,7 @@
             <label>Message</label> <br>
             <textarea name="message" id="message" rows="5" cols="60" name="description">
             </textarea><br> <span id="messageError"></span> <br>
-            <input style="background-color: blue; color: white;" type="submit" id="submitButton" class="inputi"
+            <input style="background-color: blue; color: white; " type="submit" id="submitButton" class="submitContact"
                 value="Send" name="click_send" style="color: white;">
         </form>
     </div>

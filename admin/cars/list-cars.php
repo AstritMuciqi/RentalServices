@@ -3,6 +3,7 @@
 
     Session::start();
 
+
 ?>
 
 <?php include "../includes/sidebar.php" ?>
@@ -71,11 +72,11 @@ background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
                                 <td><?= $car['rental_name'] ?></td>
                                 <td><?= $car['brand_name'] ?></td>
                                 <td><?= $car['category_name'] ?></td>
-                                <td><?= $car['car_start'] ?> <br> / <?= $car['car_end'] ?></td>
-                                <td style="width:15px"><img src="../../<?=$car['img_path'] ?>" height="25px" width="25px"></td>
-                                <td style="width:15px">
-                                    <a href="edit-car.php?id=<?= $car['car_id']?>">edit</a>
-                                    <a href="admin.php?action=edit-movie">delete</a>
+                                <td style="font-size:13px;"><?= $car['car_start'] ?> <br> / <?= $car['car_end'] ?></td>
+                                <td style="width:15px"><img src="../../<?=$car['img_path'] ?>" height="100%" width="100%"></td>
+                                <td style="width:15px;">
+                                    <a href="edit-car.php?id=<?= $car['car_id']?>">Edit</a> <br> <hr style="border-top: 2px solid black;">
+                                    <a style="color:red;" class="links" href="delete.php?id=<?= $car["car_id"] ?>">Delete</a>        
                                 </td>   
                             </tr>   
                         <?php } ?>
@@ -85,12 +86,13 @@ background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
         </div>
         <?php include "../includes/footer.php" ?>
            
-            </div>
+                </div>
+                
 
+            </div>
         </div>
     </div>
 </div>
-    </div>
     <script src="../../js/jquery.toast.min.js"></script>
     <?php if(Session::exists('success-message')){?>
     <script>
@@ -105,5 +107,6 @@ background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
     <?php } 
     Session::destroy('success-message');
     ?>
+        
 </body>
 </html>

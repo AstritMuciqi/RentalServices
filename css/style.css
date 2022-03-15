@@ -206,7 +206,7 @@ video{
 .detailSection{
     width: 100%;
     height: 390px;
-    margin: 410px 0 0 0;
+    margin: 400px 0 10px 0;
     display: flex;
     justify-content: space-around;
     background-image: url("../assets/contactForm2.jpg");
@@ -244,9 +244,7 @@ video{
 
 /*Offers Section */
 .offers{
-    margin-top: 2px;
     width: 97%;
-    margin-left: 20px;
     height: 600px;
     border-radius: 30px;    
     display: flex;
@@ -257,6 +255,7 @@ video{
     background-image: url("../assets/background8.jpg");
     background-size: 100% 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px 0 10px 20px;
 }
 
 .offers1{
@@ -270,16 +269,21 @@ video{
     background-repeat: no-repeat ;
     background-size: 100% 55%;
     background-color: rgb(52, 194, 194);
+    transition: all .4s ease;  margin: 40px ;
 
+}
+.offers1:hover{
+    transform: scale(1.1);
 }
 .offers1 h2{
     text-align: center;
-    margin-top: 280px;
+    margin-top: 295px;
+    font-size: 22px;
     
 }
 .offers1 p{
     text-align: center;
-    font-size: 15px;
+    font-size: 14px;
     color: rgb(90, 90, 90);
     margin-left: 40px;
     margin-right: 40px;
@@ -306,16 +310,24 @@ video{
     background-repeat: no-repeat ;
     background-size: 100% 55%;
     background-color: rgb(52, 194, 194);
+    transition: all .4s ease;  margin: 40px ;
 
 }
+.offers2:hover{
+    transform: scale(1.1);
+}
 .offers2 h2 {
+    margin-top: 5px;
     text-align: center;
 }
-.offers2 h4{
+.offers2 h6{
+    margin-top: 15px;
     text-align: center;
+    font-size: 19px;
+
+
 }
 .offers2 p{
-    margin-top: 8px;
     text-align: center;
     font-size: 15px;
     color: rgb(90, 90, 90);
@@ -325,7 +337,7 @@ video{
 
 .offers2 button{
     text-align: center;
-    margin: 20px auto;
+    margin: 1px auto;
     display: block;
     width: 200px;
     height: 40px;
@@ -335,45 +347,13 @@ video{
     color: white; 
 
 }
-.offers3{
-    border-radius: 30px;    
-    width: 300px;
-    height: 520px;
-    margin-top: 60px;
-    background-size: contain;
-    background-repeat: no-repeat ;
-    background-size: 100% 55%;
-    background-color: rgb(52, 194, 194);
-    
-}
-.offers3 h2{
-    text-align: center;
-}
-.offers3 p{
-    margin-top: 20px;
-    text-align: center;
-    font-size: 15px;
-    color: rgb(90, 90, 90);
-    margin-left: 40px;
-    margin-right: 40px;
-}
-.offers3 button{
-    text-align: center;
-    margin: 45px auto;
-    display: block;
-    width: 200px;
-    height: 40px;
-    border: 2px solid #e4461f;
-    border-radius: 15px;
-    background-color: #e4461f;   
-    color: white; 
-}
+
 
 /*CONTACT FORM*/
 
 .formBox{
     width: 500px;
-    height: 500px;
+    height: 550px;
     margin: 50px auto;
     display: flex;
     justify-content: center;
@@ -396,7 +376,7 @@ form textarea{
     padding: 4px 15px 4px 15px;
     width: 350px;
     margin: 0 auto;
-    border-radius: 30px;  
+    border-radius: 5px;  
     border: 2px solid #f3f1f1; 
 }
 form label{
@@ -418,6 +398,15 @@ form span{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
+.submitContact{
+    text-align: center;
+    margin: 1px auto;
+    display: block;
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    color: white; 
+}
 .submit{
     width: 120px;
     height: 50px;
@@ -426,7 +415,7 @@ form span{
 }
 .formBox input{
     color: rgb(97, 95, 94);
-    border-radius: 30px;  
+    border-radius: 5px;  
     border: 2px solid #f3f1f1; 
 }
 .bodyContact{
@@ -601,7 +590,9 @@ footer{
     background-image: url("../assets/login7.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    margin: 2em 3em;
+    height: 130%;
+
+
  }
  .login-box{
     background-color: rgba(224, 93, 5, 0.5);
@@ -616,15 +607,24 @@ footer{
  }
  .register-box{
     background-color: rgba(224, 93, 5, 0.5);
-    width: 500px;
-    height: 859px;
-    margin: 30px auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    margin: 0 auto;
+    width: 60%;
+    padding: 40px 30px 70px 70px;
+    height: 459px;
     border-radius: 30px;
     background-image: url("../assets/contactForm2.jpg");
  }
+ .register-innerBox{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 459px;
+ }
+ .register-innerBox > .shrink{
+    flex-shrink: 1;
+}
+
+
  .login-box h1{
     align-self: center;
     color: white;
@@ -637,23 +637,24 @@ footer{
  .login-box input{
     align-self: center;
     border-color: #e4461f;
-    border-radius: 30px;
+    border-radius: 5px;
  }
 
  .register-box h1{
     align-self: center;
     color: white;
  }
+
 .labelRegister{
-    margin-left: 90;
-    margin-bottom: 8px;
+
     color: white;
     font-size: 13px;
+
 }
  .register-box input{
     align-self: center;
     border-color: #e4461f;
-    border-radius: 30px;
+    border-radius: 5px;
  }
 /*AboutUs*/
 
@@ -661,20 +662,20 @@ footer{
     min-height: 100vh;
     align-items: center;
     justify-content: center;
-    background-color: #000026;
+    background-color: linear-gradient(to right top, #0459da, #4c699e, #102a62, #4e7dff, #010043);
 }
 .about-section{
     background: url("../assets/AboutUs.jpg") no-repeat left;
     background-size: 75%;
-    background-color: #000026;
+    background-color: linear-gradient(to right top, #0459da, #4c699e, #102a62, #4e7dff, #010043);
     overflow: hidden;
-    padding: 100px 0;
+    padding: 30px 0;
 }
 .inner-container{
     width: 55%;
     float: right;
     background-color: #fdfdfd;
-    padding: 150px;
+    padding: 100px;
 }
 .inner-container h1{
     margin-bottom: 30px;
@@ -717,8 +718,7 @@ footer{
 /* Products -- Cars */
 
 body{
-
-    background-image: linear-gradient(to right top, #304f7d, #1f3c70, #102a62, #031853, #010043);
+    background-image: linear-gradient(to right top, #0459da, #4c699e, #102a62, #4e7dff, #010043);
 }
 .Car-products {
   display: flex;
@@ -732,7 +732,7 @@ body{
 }
 
 
-.product {
+.Car-products .product {
   flex: 0 0 120px;
   position: relative;
   width: 350px;
@@ -743,17 +743,204 @@ body{
   padding: 0;
  
 }
-.product:hover {
+.Car-products .product:hover {
     border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
     box-shadow: 10px 10px rgba(0,0,0,.25);
+    transform: scale(1.1);
+
   }
  
-.product img{
+  .Car-products .product img{
 
     width: 300px;
     height:300px;
       
 }
+.Car-products .product .formBtn form{
+    position: absolute;
+    bottom: -10rem; left: 0; right: 0;
+    display: none;
+
+}
+.Car-products .product:hover .formBtn form{
+    bottom:133px;
+    transition: .4s ease;
+    display: block;
+}
+
+.Car-products .product .formBtn form input{
+
+    height: 2rem;
+    line-height: 1rem;
+    font-size: 1rem;
+    width: 100%;
+    background: orange;
+    color: #fff;
+}
+.Car-products .product .formBtn form input .cart-btn{
+
+    border-left: .1rem solid #fff7;
+    border-right: .1rem solid #fff7;
+    width: 50%;
+}
+
+/* detail cars*/
+.flexii{
+    background-image: linear-gradient(to right top, #5a84c4, #497bce, #3c70d6, #3764dd, #3c56e1);   display: flex;
+    flex-wrap: nowrap;
+    width: 900px;
+    height: 500px;
+    justify-content: center;
+    border: solid;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.imageii{
+    width: 500px;
+    height: 100%;
+}
+.imageii img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.contentii{
+    margin-left: 20px;
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 60px ;    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.data{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.dataFill{
+    font-size: 18px;
+    margin-top: 30px;
+
+}
+/* Cart section */
+.cart{
+    margin-top: 5rem !important;
+}
+.cart table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.7rem;
+}
+
+.cart .product-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cart th{
+    text-align: left;
+    padding: 5px 10px;
+    color: #fff;
+    background: rgb(255, 60, 93);
+}
+.cart td{
+    padding: 10px 20px;
+}
+
+.cart .remove-btn{
+    color:#fff;
+    text-decoration: none;
+    font-size: 1.35rem ;
+    background-color:rgb(255, 60, 93);
+    width: 100%;
+    padding: 3px;
+}
+.cart .product-info p{
+    margin: 3px;
+    font-size: 1.25rem;
+    color: #fff;
+
+}
+
+.cart td img{
+    width: 10rem;
+    height: 10rem;
+    margin-right: 10px;
+}
+.cart .product-info{
+    margin-top: 5px;
+    color: #fff;
+
+}
+
+.cart-total{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+}
+.cart-total table{
+    width: 100%;
+    max-width: 500px;
+    border-top: 3px solid rgb(255, 60, 93);
+}
+.cart-total .aelement{
+    margin-right: 442;
+    margin-top: 10px;               
+    color: white;
+    text-decoration: none;
+}
+.cart-total .aelement:hover{
+    color:rgb(255, 60, 93);
+}
+td:last-child{
+    text-align: right;
+    color: #fff;
+
+}
+th:last-child{
+    text-align: right;
+    color: #fff;
+
+}
+
+.checkout-container{
+
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+
+.checkout-btn:hover{
+    color: #fff;
+    background: rgb(233, 109, 130) ;
+}
+
+form .checkout-btn{
+    background:rgb(255, 60, 93) ;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.edit-btn{
+    color:#fff;
+    text-decoration: none;
+    font-size: 1.35rem ;
+    background-color:rgb(255, 60, 93);
+    width: 30%;
+    padding: 3px;
+}
+.reset-btn{
+    color:#fff;
+    text-decoration: none;
+    font-size: 1.35rem ;
+    background-color:rgb(91, 142, 194);
+    width: 30%;
+    padding: 3px;
+}
+
 
 
 

@@ -1,7 +1,7 @@
 <?php include "../includes/sidebar.php" ?>
      <div >
          <div >
-             <h2 class="border-bottom border-secondary pb-1" style="text-align:center;margin-top:20px">Customers All Messages</h2>
+             <h2 class="border-bottom border-secondary pb-1" style="text-align:center;margin-top:20px;font-weight:bold; font-size:22px;">Customers All Messages</h2>
              <div style="display:flex;flex-direction:row; flex-wrap:wrap; justify-content:center">
                  <?php
                    define("DB_HOST", "localhost");

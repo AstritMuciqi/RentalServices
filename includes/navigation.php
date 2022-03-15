@@ -1,12 +1,12 @@
 <header class="header">
         <video src="./assets/video.mp4" autoplay muted loop></video>
         <div class="logo">
-            <a href=""><b>CAR <span>RENTAL</span></b></a>
+            <a style="color:white;" href=""><b>CAR <span>RENTAL</span></b></a>
         </div>
         <div class="content-nav">
             <nav class="nav">
                 <ul class="myUl" id="test-nav-ul">
-                    <li><a class="a-bottom <?php echo ($_SERVER['PHP_SELF'] == "/course/index.php" ? "active" : "");?>"href="./index.php">Home</a></li>
+                    <li><a class="a-bottom <?php echo ($_SERVER['PHP_SELF'] == "/Course/index.php" ? "active" : "");?>"href="./index.php">Home</a></li>
                     <li><a class="a-bottom" href="./car.php">Cars</a></li>
                     <li><a class="a-bottom" href="./about.php">About</a></li>
                     <li><a class="a-bottom" href="./contact.php">Contact</a></li>

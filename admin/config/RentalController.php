@@ -52,24 +52,22 @@
         }
         public function editRental($rental_id){
 
-            $category_name = $_POST['rental_name'];
+            $rental_name = $_POST['rental_name'];
 
             $sql = "UPDATE rentals
-                    set  rental_name = '$category_name'
-                    WHERE rental_id = $category_id ";
+                    set  rental_name = '$rental_name'
+                    WHERE rental_id = $rental_id ";
 
             $this->crud->update($sql);
-
-            $this->createRental( $rental_id );
 
             if(!empty($_FILES["cover_image"]["name"])){
                 //delete pervious image
                 $this->crud->delete("delete from imagesRental where img_ref_rental = $rental_id");
                 $this->saveAndUploadRentalImage($rental_id);
             }
-            Session::set('success-message', 'Category Edited Successfully!');
+            Session::set('success-message', 'Rental Edited Successfully!');
 
-            header('Location: list-categories.php'); 
+            header('Location: list-rentals.php'); 
         }
         public function saveAndUploadRentalImage($rental_id){
 

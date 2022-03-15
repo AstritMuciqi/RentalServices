@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -23,12 +22,13 @@
     <link href="../../admin-css/style.css" rel="stylesheet" type="text/css">
     <link href="../../admin-css/datepicker.min.css" rel="stylesheet" type="text/css">
     <link href="../../admin-css/chosen.min.css" rel="stylesheet" type="text/css">
+    <link href="../../admin-css/jquery.toast.min.css" rel="stylesheet" type="text/css">
 
 
 
 
-    <!-- Include English language -->
-    <script src="js/plugins/datepicker/dist/js/i18n/datepicker.en.js"></script>
+
+
 
     <style>
         .page-link {
@@ -54,7 +54,7 @@
                           background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
                           " id="nav-brand-container">
                     <div class = "sidebar-row">
-                        <a style="font-weight:bold; color:black;" href="../../../course" id="nav-brand"> <b>Car Rental</b> 
+                        <a style="font-weight:bold; color:black;" href="../../../Course" id="nav-brand"> <b>Car Rental</b> 
                         </a>
                         <i id="bars" class="fas fa-bars"></i>
                     </div>
@@ -68,9 +68,9 @@ background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
                     <div style="background-color: #6a93cb;
                           background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);" id="profile-pic-container">
                         <div class = "sidebar-row">
-                            <img src="../../assets/admin.jpg" height="60px" width="60px">
+                            <img src="../../assets/admin.png" height="60px" width="60px">
                             <ul id="button-container">
-                                <li><strong><i>Welcome!</i> John Doe</strong><span class="active"></span></li>
+                                <li><strong><i>Welcome!</i> AppAdmin</strong><span class="active"></span></li>
                                 <li style="color:#4f5967; font-size:10px;font-weight: 800">ADMINISTRATOR</li>
                                 <li>
                                 
@@ -97,7 +97,7 @@ background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
                             </li>
                             <li>
                                 <a  href="../cars/list-cars.php">
-                                    <i class="fas fa-file-video"></i>
+                                <i class="fas fa-car"></i>
                                     <span>Cars</span>
                                     <i class="fas fa-chevron-right"></i>
                                 </a>
@@ -105,14 +105,14 @@ background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
                             </li>
                             <li>
                                 <a href="../rentals/list-rentals.php">
-                                    <i class="fas fa-tv"></i>
+                                    <i class="fas fa-registered"></i>
                                     <span>Rentals</span>
                                     <i class="fas fa-chevron-right"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="../brands/list-brands.php">
-                                    <i class="fas fa-tv"></i>
+                                    <i class="fas fa-bold"></i>
                                     <span>Brands</span>
                                     <i class="fas fa-chevron-right"></i>
                                 </a>
@@ -159,9 +159,9 @@ background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
                     </div>
                 </div>
             </aside>
-        <div style="width:100%;padding-bottom:40px" id="main-panel">
+        <div style="width:100%;padding-bottom:70px" id="main-panel">
             <div id="notifications-container">
-                    <h3>Data Operations</h3>
+                    <h3 style="font-weight:bold; font-size:22px;">Data Operations</h3>
                     <ul style="display: flex;margin-left:auto">
                         <li>
                             <a class="nav-link">
